@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Loan Offers | XpertzLoans Tools</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <base href="/">
+    <meta name="description" content="Compare home loan offers from 40+ banks, get lowest interest rates, and apply in minutes at PropXpertz.">
+    <link rel="canonical" href="https://propxpertz.com/offers.html">
+    <meta property="og:title" content="Home Loan Offers | PropXpertz">
+    <meta property="og:description" content="Compare home loan offers from top banks with PropXpertz. Lowest rates, fast approval, expert support.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://propxpertz.com/offers.html">
+    <meta property="og:image" content="assets/branding/og-banner.svg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Home Loan Offers | PropXpertz">
+    <meta name="twitter:description" content="Get personalised home loan offers and the lowest interest rates.">
+    <meta name="twitter:image" content="assets/branding/og-banner.svg">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="styles.css?v=20260212">
+    <link rel="icon" href="assets/logos/site-logo.svg" type="image/svg+xml">
+    <style>
+        .logo-grid { display: flex; flex-wrap: nowrap; gap: 18px; justify-content: flex-start; align-items: center; overflow-x: auto; padding-bottom: 6px; }
+        .logo-card { width: 112px !important; height: 112px !important; aspect-ratio: 1 / 1 !important; padding: 14px !important; display: flex !important; align-items: center !important; justify-content: center !important; background: #ffffff !important; border: 1px solid #E5E7EB !important; border-radius: 14px !important; box-shadow: 0 10px 24px rgba(10,37,64,0.08) !important; transition: transform .18s ease, box-shadow .18s ease !important; }
+        .logo-card:hover { transform: translateY(-2px) !important; box-shadow: 0 14px 28px rgba(10,37,64,0.12) !important; }
+        .logo-img { display: block !important; filter: grayscale(0%) !important; opacity: 1 !important; max-height: 70% !important; max-width: 70% !important; width: auto !important; object-fit: contain !important; }
+        .logo-img.bob-icon { max-width: 100% !important; object-fit: cover !important; object-position: left center !important; clip-path: inset(0 55% 0 0); }
+        @media (max-width: 640px) { .logo-card { width: 96px !important; height: 96px !important; } .logo-img { max-height: 72% !important; } }
+    </style>
+    <script type="application/ld+json">
+    { "@context": "https://schema.org", "@type": "WebPage", "name": "Home Loan Offers | PropXpertz", "url": "https://propxpertz.com/offers.html", "description": "Compare home loan offers from 40+ banks with PropXpertz. Lowest rates, fast approval, expert support.", "publisher": { "@type": "Organization", "name": "PropXpertz", "url": "https://propxpertz.com" } }
+    </script>
+</head>
+<body>
+<div id="header-placeholder"></div>
+<noscript>
+  <nav aria-label="Primary">
+    <a href="index.html">Home</a> •
+    <a href="offers.html">Offers</a> •
+    <a href="loan-calculator-tools.html">Loan Tools</a> •
+    <a href="apartments.html">Apartments</a> •
+    <a href="villas.html">Villas</a> •
+    <a href="open-plots.html">Open Plots</a> •
+    <a href="commercial.html">Commercial</a> •
+    <a href="contact.html">Contact</a>
+  </nav>
+</noscript>
+<div id="page">
+<section class="offers-page-hero">
+    <div class="hero-container">
+        <div class="hero-left">
+            <div class="offers-hero-content">
+                <h1>Compare <span class="gold-text">Home Loan Offers</span> from 40+ Banks</h1>
+                <p class="sub-head">Lowest Interest Rate promise for 10 years on your home loan in just <strong>90 Seconds</strong></p>
+                <div class="loan-input-box">
+                    <label>Enter your required Loan Amount below</label>
+                    <div class="input-control-wrapper">
+                        <button class="inc-btn dec" type="button" aria-label="Decrease loan amount">-</button>
+                        <div class="currency-wrap">
+                            <span class="curr-sym">₹</span>
+                            <input type="text" id="offerLoanAmt" value="50,00,000" aria-label="Loan amount">
+                        </div>
+                        <button class="inc-btn inc" type="button" aria-label="Increase loan amount">+</button>
+                    </div>
+                    <div class="range-slider-container">
+                        <input type="range" min="1000000" max="50000000" step="100000" value="5000000" class="slider" id="loanRange" aria-label="Loan amount slider">
+                    </div>
+                    <div class="range-labels">
+                        <span>₹10L</span>
+                        <span>₹5Cr</span>
+                    </div>
+                    <button class="get-started-btn" type="button" aria-label="Check offers now">Check Offers Now</button>
+                </div>
+            </div>
+        </div>
+        <div class="hero-right">
+            <div id="loan-contact-placeholder"></div>
+        </div>
+    </div>
+</section>
+<section class="bank-network-section">
+    <h2>Our Partner Network</h2>
+    <div class="network-category">
+        <h3 class="cat-title">Banking Finance Partners</h3>
+        <div class="logo-grid">
+            <div class="logo-card"><img src="assets/logos/banks-std/SBI.png" alt="SBI" class="logo-img" loading="lazy" onerror="this.style.display='none'"></div>
+            <div class="logo-card"><img src="assets/logos/banks-std/HDFC.png" alt="HDFC" class="logo-img" loading="lazy" onerror="this.style.display='none'"></div>
+            <div class="logo-card"><img src="assets/logos/banks-std/ICICI.png" alt="ICICI" class="logo-img" loading="lazy" onerror="this.style.display='none'"></div>
+            <div class="logo-card"><img src="assets/logos/banks-std/Axis.png" alt="Axis" class="logo-img" loading="lazy" onerror="this.style.display='none'"></div>
+            <div class="logo-card"><img src="assets/logos/banks-std/kotak.png" alt="Kotak" class="logo-img" loading="lazy" onerror="this.style.display='none'"></div>
+            <div class="logo-card"><img src="assets/logos/banks-std/BOB.png" alt="Bank of Baroda" class="logo-img" loading="lazy" onerror="this.src='assets/logos/bob.svg'; this.onerror=null;"></div>
+            <div class="logo-card"><img src="assets/logos/banks-std/IDFC.png" alt="IDFC" class="logo-img" loading="lazy" onerror="this.style.display='none'"></div>
+        </div>
+    </div>
+    <div class="network-category">
+        <h3 class="cat-title">Non-Banking Finance (NBFC)</h3>
+        <div class="logo-grid">
+            <div class="logo-card"><img src="assets/logos/NBFC-std/LIC.png" alt="LIC" class="logo-img" loading="lazy" onerror="this.style.display='none'"></div>
+            <div class="logo-card"><img src="assets/logos/NBFC-std/bajaj.png" alt="Bajaj" class="logo-img" loading="lazy" onerror="this.style.display='none'"></div>
+            <div class="logo-card"><img src="assets/logos/NBFC-std/tata.png" alt="Tata" class="logo-img" loading="lazy" onerror="this.style.display='none'"></div>
+            <div class="logo-card"><img src="assets/logos/NBFC-std/muthoot.png" alt="Muthoot" class="logo-img" loading="lazy" onerror="this.style.display='none'"></div>
+            <div class="logo-card"><img src="assets/logos/NBFC-std/aditya.png" alt="Aditya Birla" class="logo-img" loading="lazy" onerror="this.style.display='none'"></div>
+            <div class="logo-card"><img src="assets/logos/NBFC-std/L&T.png" alt="L&T Finance" class="logo-img" loading="lazy" onerror="this.style.display='none'"></div>
+            <div class="logo-card"><img src="assets/logos/NBFC-std/godrej.png" alt="Godrej" class="logo-img" loading="lazy" onerror="this.style.display='none'"></div>
+        </div>
+    </div>
+</section>
+<section class="stats-bar">
+    <div class="stat-item"><strong>2,500+</strong><span>Happy Customers</span></div>
+    <div class="stat-item"><strong>12+ Cities</strong><span>Covered Across India</span></div>
+    <div class="stat-item"><strong>₹3,000 Crore+</strong><span>Loan Amount Disbursed</span></div>
+</section>
+<section class="steps-section">
+    <h2>Find your perfect home loan in 4 easy steps</h2>
+    <div class="steps-container">
+        <div class="step-card"><div class="step-icon">1</div><h3>Fill details</h3><p>Enter your loan requirements and basic details.</p></div>
+        <div class="step-card"><div class="step-icon">2</div><h3>Compare Offers</h3><p>View and select the best offer from top banks.</p></div>
+        <div class="step-card"><div class="step-icon">3</div><h3>Processing</h3><p>Our dedicated manager helps with documentation.</p></div>
+        <div class="step-card"><div class="step-icon">4</div><h3>Disbursal</h3><p>Bank approves and disburses your loan amount.</p></div>
+    </div>
+</section>
+</div> 
+<div id="footer-placeholder"></div>
+<script src="script.js?v=20260212"></script>
+</body>
+</html>

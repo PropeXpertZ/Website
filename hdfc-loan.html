@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HDFC Home Loan | PropXpertz</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <base href="/">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div id="page">
+  <div id="header-placeholder"></div>
+
+<section class="bank-hero-section">
+    <div class="bank-hero-container">
+        <div class="bank-hero-left">
+            <div class="bank-title-row">
+                <img src="assets/logos/banks-std/HDFC.png" alt="HDFC Logo" class="bank-page-logo" onerror="this.style.display='none'">
+                <div>
+                    <h1>HDFC <span class="gold-text">Home Loan</span></h1>
+                    <p class="bank-tagline">Experience seamless home buying with rates starting from 8.70% p.a.</p>
+                </div>
+            </div>
+            <div class="bank-highlights">
+                <div class="highlight-box"><span class="hl-icon">📈</span><span class="hl-label">Interest Rate</span><span class="hl-val">8.70% p.a</span></div>
+                <div class="highlight-box"><span class="hl-icon">💰</span><span class="hl-label">Max Amount</span><span class="hl-val">Up to ₹10Cr</span></div>
+                <div class="highlight-box"><span class="hl-icon">⏱</span><span class="hl-label">Processing</span><span class="hl-val">Online</span></div>
+            </div>
+        </div>
+        <div class="bank-hero-right">
+            <div id="loan-contact-placeholder"></div>
+        </div>
+    </div>
+</section>
+
+<section class="sbi-section">
+    <h2 class="section-heading">HDFC Features and Benefits</h2>
+    <div class="features-table-container">
+        <table class="features-table">
+            <thead><tr><th>Feature</th><th>Details</th><th>Benefit</th></tr></thead>
+            <tbody>
+                <tr><td><strong>Interest Rate</strong></td><td>Starting from 8.70% p.a.</td><td><span class="badge-pill">Special Rates</span></td></tr>
+                <tr><td><strong>Processing Fee</strong></td><td>0.50% or ₹3,000 (Whichever higher)</td><td><span class="badge-pill">Capped</span></td></tr>
+                <tr><td><strong>Tenure</strong></td><td>Up to 30 Years</td><td><span class="badge-pill">Long Term</span></td></tr>
+                <tr><td><strong>Eligibility</strong></td><td>Salaried & Self Employed</td><td><span class="badge-pill">Inclusive</span></td></tr>
+            </tbody>
+        </table>
+    </div>
+</section>
+
+<section class="sbi-section bg-gray">
+    <h2 class="section-heading">HDFC Loan Products</h2>
+    <div class="products-scroll-container">
+        <div class="product-card">
+            <h3>HDFC Regular Home Loan</h3>
+            <p class="prod-sub">For purchase of flat/house</p>
+            <div class="prod-row"><span>Rate</span><span class="prod-badge">8.70% p.a.</span></div>
+            <ul class="prod-list"><li>✔ Expert legal & technical counseling</li><li>✔ Doorstep Service</li></ul>
+            <button class="prod-btn">Learn More</button>
+        </div>
+        <div class="product-card">
+            <h3>HDFC Reach</h3>
+            <p class="prod-sub">For micro-entrepreneurs</p>
+            <div class="prod-row"><span>Rate</span><span class="prod-badge">9.00% p.a.</span></div>
+            <ul class="prod-list"><li>✔ Minimal documentation</li><li>✔ Flexible eligibility</li></ul>
+            <button class="prod-btn">Learn More</button>
+        </div>
+        <div class="product-card">
+            <h3>HDFC Rural</h3>
+            <p class="prod-sub">For agriculturists/planters</p>
+            <div class="prod-row"><span>Rate</span><span class="prod-badge">9.40% p.a.</span></div>
+            <ul class="prod-list"><li>✔ No ITR required for farmers</li><li>✔ Tailored for rural needs</li></ul>
+            <button class="prod-btn">Learn More</button>
+        </div>
+    </div>
+</section>
+
+<section class="sbi-section">
+    <h2 class="section-heading">Quick EMI Preview</h2>
+    <div class="quick-emi-container">
+        <div class="amount-tabs">
+            <button class="amt-tab" onclick="updateQuickEMI(3000000, this, 8.70)">₹30 Lac</button>
+            <button class="amt-tab active" onclick="updateQuickEMI(5000000, this, 8.70)">₹50 Lac</button>
+        </div>
+        <div class="quick-result-box">
+            <div class="qr-item"><span class="qr-label">Loan Amount</span><span class="qr-val" id="qAmt">₹50 Lac</span></div>
+            <div class="qr-item"><span class="qr-label">Interest Rate</span><span class="qr-val">8.70% p.a.</span></div>
+            <div class="qr-item"><span class="qr-label">Monthly EMI</span><span class="qr-val highlight" id="qEMI">₹39,181</span></div>
+        </div>
+    </div>
+</section>
+
+<section class="sbi-section bg-gray">
+    <h2 class="section-heading">Key Documents</h2>
+    <div class="docs-grid">
+        <div class="doc-card"><h4>Identity & Residence</h4><ul class="doc-list"><li><span>✔</span> Aadhaar/PAN/Voter ID</li></ul></div>
+        <div class="doc-card"><h4>Income</h4><ul class="doc-list"><li><span>✔</span> Salary Slips/Bank Statements</li></ul></div>
+        <div class="doc-card"><h4>Property</h4><ul class="doc-list"><li><span>✔</span> Allotment Letter/Buyer Agreement</li></ul></div>
+    </div>
+    <div class="quick-btn-container"><button class="sbi-submit-btn wide-btn" onclick="window.location.href='loan-documents.html'">See All Documents</button></div>
+</section>
+
+<div id="footer-placeholder"></div>
+</div>
+<script>
+    function updateQuickEMI(p, btn, rate) {
+        document.querySelectorAll('.amt-tab').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        const n = 30 * 12; const mr = rate / 12 / 100;
+        const emi = p * mr * Math.pow(1 + mr, n) / (Math.pow(1 + mr, n) - 1);
+        let amtText = p >= 10000000 ? (p/10000000) + " Crore" : (p/100000) + " Lac";
+        document.getElementById('qAmt').innerText = "₹" + amtText;
+        document.getElementById('qEMI').innerText = "₹" + Math.round(emi).toLocaleString('en-IN');
+    }
+    document.addEventListener('DOMContentLoaded', () => { updateQuickEMI(5000000, document.querySelector('.amt-tab.active'), 8.70); });
+</script>
+<script src="script.js"></script>
+</body>
+</html>

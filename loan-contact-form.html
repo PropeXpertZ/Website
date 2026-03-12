@@ -1,0 +1,58 @@
+<div class="enquiry-card">
+  <div class="card-header">
+    <h3>Get Best Loan Offers</h3>
+    <p>Takes less than 30 seconds</p>
+  </div>
+  <div class="form-grid">
+    <div class="form-item">
+      <label>Required Loan Amount</label>
+      <input type="number" id="heroLoanAmt" value="5000000" step="50000" placeholder="e.g. 50,00,000" oninput="updateWords('heroLoanAmt', 'heroWords')">
+      <div class="amount-words" id="heroWords"></div>
+    </div>
+    <div class="form-item">
+      <label>Mobile Number</label>
+      <div class="phone-box">
+        <select class="prefix-select">
+          <option value="+91">+91 (IN)</option>
+          <option value="+1">+1 (US)</option>
+          <option value="+44">+44 (UK)</option>
+          <option value="+971">+971 (UAE)</option>
+        </select>
+        <input type="tel" id="mobileInput" placeholder="Enter 10 digit number" maxlength="10" oninput="validateMobile()">
+      </div>
+      <div id="mobileError" class="error-msg" style="display:none;">Invalid mobile number</div>
+    </div>
+    <div class="form-item">
+      <label>Property City</label>
+      <select id="citySelect">
+        <option value="" disabled selected>Select City</option>
+        <option value="Hyderabad">Hyderabad</option>
+      </select>
+    </div>
+    <div class="form-item">
+      <label>Property Finalized?</label>
+      <div class="radio-row">
+        <label class="radio-label"><input type="radio" name="final" value="yes" onclick="togglePropertyLogic()"> Yes</label>
+        <label class="radio-label"><input type="radio" name="final" value="no" checked onclick="togglePropertyLogic()"> No</label>
+      </div>
+    </div>
+    <div class="form-item hidden" id="tokenQuestion">
+      <label>Have you paid the token amount?</label>
+      <div class="radio-row">
+        <label class="radio-label"><input type="radio" name="token" value="yes"> Yes</label>
+        <label class="radio-label"><input type="radio" name="token" value="no" checked> No</label>
+      </div>
+    </div>
+    <div class="form-item" id="planningQuestion">
+      <label>When are you planning to finalize?</label>
+      <div class="radio-row centered-days">
+        <label class="radio-label"><input type="radio" name="plan" value="30" checked> 30 days</label>
+        <label class="radio-label"><input type="radio" name="plan" value="60"> 60 days</label>
+        <label class="radio-label"><input type="radio" name="plan" value="90"> 90 days</label>
+        <label class="radio-label"><input type="radio" name="plan" value="more_90"> &gt;90 days</label>
+      </div>
+    </div>
+  </div>
+  <button class="hero-submit" onclick="window.location.href='free-quote.html'">Get Free Quote</button>
+  <p class="terms-text">By continuing I agree to <span class="bold-gold">PropXpertz</span> T&C.</p>
+</div>

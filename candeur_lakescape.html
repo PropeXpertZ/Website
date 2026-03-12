@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Candeur Lakescape | PropXpertz</title> 
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* === PROPERTY PAGE SPECIFIC STYLES === */
+    
+    /* Layout Containers */
+    .prop-header { padding-top: 100px; padding-bottom: 20px; background: #F8FAFC; }
+    .prop-container { 
+        max-width: 1200px; 
+        margin: 0 auto; 
+        padding: 0 20px; 
+        display: grid; 
+        grid-template-columns: 2fr 1fr; /* Content vs Sidebar width */
+        gap: 40px; 
+        position: relative;
+    }
+    
+    /* BREADCRUMB & TITLE HEADER */
+    .prop-top-row { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 10px; flex-wrap: wrap; gap: 15px; }
+    .prop-title-group h1 { color: #0A2540; font-size: 32px; margin: 0; line-height: 1.2; }
+    .rera-badge { 
+        display: inline-block; background: #E2E8F0; color: #475569; 
+        font-size: 12px; font-weight: 600; padding: 4px 8px; border-radius: 4px; 
+        margin-top: 5px; border: 1px solid #CBD5E1;
+    }
+    .btn-brochure {
+        background-color: #C9A227; color: #0A2540; 
+        padding: 12px 24px; border-radius: 8px; text-decoration: none; 
+        font-weight: 600; display: inline-flex; align-items: center; gap: 8px;
+        transition: 0.3s; white-space: nowrap;
+    }
+    .btn-brochure:hover { background-color: #0A2540; color: #fff; }
+    
+    .prop-price { color: #C9A227; font-size: 26px; font-weight: 700; display: block; margin-bottom: 20px; }
+
+    /* === NEW: MULTIMEDIA GALLERY GRID (1 Large + 4 Small) === */
+    .gallery-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 200px);
+        gap: 10px;
+        margin-bottom: 40px;
+        border-radius: 16px;
+        overflow: hidden;
+    }
+    /* Main Image/Video (Large, Left Side) */
+    .gallery-item-main {
+        grid-column: span 2;
+        grid-row: span 2;
+        position: relative;
+    }
+    .gallery-item-main img, .gallery-item-main video {
+        width: 100%; height: 100%; object-fit: cover;
+    }
+    /* Play Button Overlay (Optional for Video) */
+    .play-icon {
+        position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
+        font-size: 50px; color: white; opacity: 0.8; text-shadow: 0 2px 10px rgba(0,0,0,0.5);
+        pointer-events: none;
+    }
+    /* Small Thumbnails */
+    .gallery-item { position: relative; cursor: pointer; }
+    .gallery-item img { width: 100%; height: 100%; object-fit: cover; transition: 0.3s; }
+    .gallery-item:hover img { transform: scale(1.05); }
+    
+    /* "View All Photos" Button on last image */
+    .view-all-overlay {
+        position: absolute; inset: 0; background: rgba(10,37,64,0.7);
+        display: flex; align-items: center; justify-content: center;
+        color: #fff; font-weight: 600; font-size: 14px;
+        backdrop-filter: blur(2px);
+    }
+
+    /* DETAILS CONTENT */
+    .prop-details-box { background: #fff; padding: 30px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); margin-bottom: 30px; }
+    .prop-highlights li { margin-bottom: 10px; display: flex; align-items: flex-start; gap: 10px; color: #4B5563; }
+    .prop-highlights i { color: #C9A227; margin-top: 5px; }
+
+    /* === STICKY SIDEBAR FORM === */
+    .sidebar-wrapper { 
+        position: sticky; 
+        top: 110px; /* Sticks 110px from top of screen */
+        height: fit-content; 
+        z-index: 10;
+    }
+    .enquiry-form-card { 
+        background: #0A2540; color: #fff; padding: 30px; border-radius: 12px; 
+        box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+    }
+    .enquiry-form-card h3 { color: #C9A227; margin-bottom: 5px; }
+    .enquiry-form-card p { font-size: 14px; margin-bottom: 20px; opacity: 0.8; }
+    .enquiry-form-card input, .enquiry-form-card textarea {
+        width: 100%; padding: 12px; margin-bottom: 15px; border-radius: 8px; border: 1px solid rgba(255,255,255,0.2);
+        background: rgba(255,255,255,0.05); color: #fff; font-family: 'Poppins', sans-serif;
+    }
+    .enquiry-form-card button { width: 100%; padding: 14px; background: #C9A227; border: none; border-radius: 8px; font-weight: 700; color: #0A2540; cursor: pointer; transition: 0.3s; }
+    .enquiry-form-card button:hover { background: #fff; }
+
+    /* Mobile Responsive */
+    @media (max-width: 900px) { 
+        .prop-container { grid-template-columns: 1fr; } 
+        .gallery-grid { grid-template-columns: repeat(2, 1fr); grid-template-rows: repeat(2, 150px); }
+        .gallery-item-main { grid-column: span 2; grid-row: span 1; height: 250px; }
+        .prop-top-row { flex-direction: column; }
+        .btn-brochure { width: 100%; justify-content: center; }
+        .sidebar-wrapper { position: static; }
+    }
+  </style>
+</head>
+<body>
+<div id="page">
+  <div id="header-placeholder"></div> 
+
+  <section class="prop-header">
+    <div class="prop-container" style="display:block; padding-bottom:0;">
+        <p style="color:#64748B; font-size:14px; margin-bottom: 15px;">
+            <a href="index.html" style="color:#64748B; text-decoration:none;">Home</a> > 
+            <span style="color:#0A2540; font-weight:600;">Properties</span>
+        </p>
+
+        <div class="prop-top-row">
+            <div class="prop-title-group">
+                <h1>Candeur Lakescape</h1>
+                <span class="rera-badge">RERA ID: P02400005724</span>
+            </div>
+            <a href="lakescape_brochure.pdf" class="btn-brochure" download>
+                <i class="fa-solid fa-file-arrow-down"></i> Download Brochure
+            </a>
+        </div>
+        <span class="prop-price">₹1.12 Cr - ₹1.70 Cr</span>
+    </div>
+  </section>
+
+  <main class="prop-container">
+    
+    <div class="prop-content">
+      
+      <div class="gallery-grid">
+        <div class="gallery-item-main">
+            <img src="candeur_main_image.png" alt="Main View">
+            </div>
+        
+        <div class="gallery-item"><img src="REPLACE_SMALL_IMG_1" alt="View 1"></div>
+        <div class="gallery-item"><img src="REPLACE_SMALL_IMG_2" alt="View 2"></div>
+        <div class="gallery-item"><img src="REPLACE_SMALL_IMG_3" alt="View 3"></div>
+        <div class="gallery-item">
+            <img src="REPLACE_SMALL_IMG_4" alt="View 4">
+            <div class="view-all-overlay"><i class="fa fa-images"></i> &nbsp; View All</div>
+        </div>
+      </div>
+
+      <div class="prop-details-box">
+        <h3>Property Overview</h3>
+        <p style="color: #4B5563; line-height: 1.8; margin-top: 10px;">
+          Located in the prime hub of Kondapur, Candeur Lakescape spans over 9.11 acres with 7 majestic towers. Rising 47 floors high, it offers 2, 2.5, 3, and 3.5 BHK ultra-premium apartments with breathtaking views of the city and the adjacent lake.
+        </p>
+      </div>
+
+      <div class="prop-details-box">
+        <h3>Project Highlights</h3>
+        <ul class="prop-highlights" style="list-style: none; padding: 0; margin-top: 15px;">
+            <li><i class="fa-solid fa-check-circle"></i> 47-Floor High Rise Towers</li>
+            <li><i class="fa-solid fa-check-circle"></i> 2, 2.5, 3 & 3.5 BHK Configurations</li>
+            <li><i class="fa-solid fa-check-circle"></i> 1 Minute from Sanskriti School</li>
+            <li><i class="fa-solid fa-check-circle"></i> 50+ Lifestyle Amenities including Clubhouse</li>
+            <li><i class="fa-solid fa-check-circle"></i> Located near Hitech City & Gachibowli</li>
+        </ul>
+      </div>
+
+      <div class="prop-details-box">
+        <h3>Location Map</h3>
+        <p style="color:#64748B; margin-bottom:15px;">Explore the neighborhood and connectivity.</p>
+        <iframe src="https://maps.google.com/maps?q=Hyderabad&t=&z=13&ie=UTF8&iwloc=&output=embed" 
+        width="100%" height="300" style="border:0; border-radius:12px;" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+    </div>
+
+    <div class="sidebar-wrapper">
+      <div class="enquiry-form-card">
+        <h3>Interested?</h3>
+        <p>Fill the form to get brochure & pricing.</p>
+        
+        <form id="sidebarForm" onsubmit="handlePropertySubmit(event)">
+          <input type="hidden" name="property_name" id="hiddenPropName" value="REPLACE_PROPERTY_TITLE">
+          
+          <input type="text" name="name" placeholder="Your Name" required>
+          <input type="text" name="phone" placeholder="Phone Number" required>
+          <input type="email" name="email" placeholder="Email Address">
+          <textarea name="message" rows="3" placeholder="I am interested in this property..."></textarea>
+          
+          <button type="submit">Request Call Back</button>
+        </form>
+        <p id="propFormStatus" style="display:none; color: #C9A227; margin-top:10px; font-weight:600;">Thank you! We will call you soon.</p>
+      </div>
+    </div>
+
+  </main>
+
+  <div id="footer-placeholder"></div>
+</div> 
+<script src="script.js"></script>
+<script>
+    // Specific logic for Sidebar Form
+    function handlePropertySubmit(e) {
+        e.preventDefault();
+        const btn = e.target.querySelector('button');
+        const status = document.getElementById('propFormStatus');
+        
+        const formData = new FormData(e.target);
+        const data = Object.fromEntries(formData.entries());
+
+        btn.innerHTML = 'Sending... <i class="fa fa-spinner fa-spin"></i>';
+        
+        fetch('https://script.google.com/macros/s/AKfycbw7XIPL5nV1NCAn0435s33xEAc2LByXhZ0A8yVfTDBfXhChpM-huO-V_f_HCr0GHGojIg/exec', {
+            method: 'POST',
+            mode: 'no-cors',
+            body: JSON.stringify(data)
+        }).then(() => {
+            btn.style.display = 'none';
+            status.style.display = 'block';
+        }).catch((err) => {
+            console.error(err);
+            btn.innerText = 'Error. Try Again.';
+        });
+    }
+</script>
+</body>
+</html>

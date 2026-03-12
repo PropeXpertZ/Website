@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SBI Home Loan | PropXpertz</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <base href="/">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div id="page">
+  <div id="header-placeholder"></div>
+
+<main>
+<section class="bank-hero-section">
+    <div class="bank-hero-container">
+        <div class="bank-hero-left">
+            <div class="bank-title-row">
+                <img src="assets/logos/banks-std/SBI.png" alt="SBI Logo" class="bank-page-logo" onerror="this.style.display='none'">
+                <div>
+                    <h1>SBI <span class="gold-text">Home Loan</span></h1>
+                    <p class="bank-tagline">SBI offers home loans at attractive interest rates starting from just 8.50% p.a.</p>
+                </div>
+            </div>
+            
+            <div class="bank-highlights">
+                <div class="highlight-box">
+                    <span class="hl-icon">📈</span>
+                    <span class="hl-label">Interest Rate</span>
+                    <span class="hl-val">8.50% p.a</span>
+                </div>
+                <div class="highlight-box">
+                    <span class="hl-icon">💰</span>
+                    <span class="hl-label">Max Amount</span>
+                    <span class="hl-val">Up to ₹15Cr</span>
+                </div>
+                <div class="highlight-box">
+                    <span class="hl-icon">⏱</span>
+                    <span class="hl-label">Processing</span>
+                    <span class="hl-val">15 Days</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="bank-hero-right">
+            <div id="loan-contact-placeholder"></div>
+        </div>
+    </div>
+</section>
+
+<section class="sbi-section">
+    <h2 class="section-heading">SBI Features and Benefits</h2>
+    <div class="features-table-container">
+        <table class="features-table">
+            <thead>
+                <tr><th>Feature</th><th>Details</th><th>Benefit</th></tr>
+            </thead>
+            <tbody>
+                <tr><td><strong>Interest Rate</strong></td><td>Starting from 8.50% p.a.</td><td><span class="badge-pill">Competitive</span></td></tr>
+                <tr><td><strong>Processing Fee</strong></td><td>0.35% + GST (Min ₹2k, Max ₹10k)</td><td><span class="badge-pill">Lowest in Market</span></td></tr>
+                <tr><td><strong>Prepayment Charges</strong></td><td>NIL for floating rate loans</td><td><span class="badge-pill">No Penalty</span></td></tr>
+                <tr><td><strong>Tenure</strong></td><td>Up to 30 Years</td><td><span class="badge-pill">Flexible</span></td></tr>
+                <tr><td><strong>LTV Ratio</strong></td><td>Up to 90% of Property Value</td><td><span class="badge-pill">High Funding</span></td></tr>
+            </tbody>
+        </table>
+    </div>
+</section>
+
+<section class="sbi-section bg-gray">
+    <h2 class="section-heading">SBI Bank Home Loan Products</h2>
+    <div class="products-scroll-container">
+        <div class="product-card">
+            <h3>Regular Home Loan</h3>
+            <p class="prod-sub">For ready-to-move properties</p>
+            <div class="prod-row"><span>Interest Rate</span><span class="prod-badge">8.50% p.a.</span></div>
+            <div class="prod-row"><span>Max Amount</span><strong>₹10 Cr</strong></div>
+            <ul class="prod-list"><li>✔ Up to 90% financing</li><li>✔ 30 years tenure</li><li>✔ Quick processing</li></ul>
+            <button class="prod-btn">Learn More</button>
+        </div>
+        <div class="product-card">
+            <h3>Construction Loan</h3>
+            <p class="prod-sub">For building new homes</p>
+            <div class="prod-row"><span>Interest Rate</span><span class="prod-badge">8.55% p.a.</span></div>
+            <div class="prod-row"><span>Max Amount</span><strong>₹5 Cr</strong></div>
+            <ul class="prod-list"><li>✔ Stage-wise disbursement</li><li>✔ Interest on utilized amount</li></ul>
+            <button class="prod-btn">Learn More</button>
+        </div>
+        <div class="product-card">
+            <h3>Plot Purchase Loan</h3>
+            <p class="prod-sub">For buying residential plots</p>
+            <div class="prod-row"><span>Interest Rate</span><span class="prod-badge">9.40% p.a.</span></div>
+            <div class="prod-row"><span>Max Amount</span><strong>₹3 Cr</strong></div>
+            <ul class="prod-list"><li>✔ Up to 85% financing</li><li>✔ Approved layouts only</li></ul>
+            <button class="prod-btn">Learn More</button>
+        </div>
+    </div>
+</section>
+
+<section class="sbi-section">
+    <h2 class="section-heading">Quick EMI Preview</h2>
+    <div class="quick-emi-container">
+        <div class="amount-tabs">
+            <button class="amt-tab" onclick="updateQuickEMI(3000000, this, 8.50)">₹30 Lac</button>
+            <button class="amt-tab" onclick="updateQuickEMI(5000000, this, 8.50)">₹50 Lac</button>
+            <button class="amt-tab active" onclick="updateQuickEMI(10000000, this, 8.50)">₹1 Crore</button>
+        </div>
+        <div class="quick-result-box">
+            <div class="qr-item"><span class="qr-label">Loan Amount</span><span class="qr-val" id="qAmt">₹1 Crore</span></div>
+            <div class="qr-item"><span class="qr-label">Interest Rate</span><span class="qr-val">8.50% p.a.</span></div>
+            <div class="qr-item"><span class="qr-label">Monthly EMI</span><span class="qr-val highlight" id="qEMI">₹76,891</span></div>
+        </div>
+        <div class="quick-btn-container"><button class="wide-btn" onclick="window.location.href='loan-calculator-tools.html'">View Full Breakup →</button></div>
+    </div>
+</section>
+
+<section class="sbi-section bg-gray">
+    <h2 class="section-heading">Key Documents Required</h2>
+    <div class="docs-grid">
+        <div class="doc-card">
+            <div class="doc-header"><div class="doc-icon">🪪</div><h4>Identity & Address</h4></div>
+            <ul class="doc-list"><li><span>✔</span> <strong>Aadhaar/PAN</strong></li><li><span>✔</span> <strong>Utility Bills</strong></li></ul>
+        </div>
+        <div class="doc-card">
+            <div class="doc-header"><div class="doc-icon">💼</div><h4>Income Documents</h4></div>
+            <ul class="doc-list"><li><span>✔</span> <strong>3 Months Payslips</strong></li><li><span>✔</span> <strong>Form 16 / ITR</strong></li></ul>
+        </div>
+        <div class="doc-card">
+            <div class="doc-header"><div class="doc-icon">🏠</div><h4>Property Documents</h4></div>
+            <ul class="doc-list"><li><span>✔</span> <strong>Sale Deed</strong></li><li><span>✔</span> <strong>Occupancy Certificate</strong></li></ul>
+        </div>
+    </div>
+    <div class="quick-btn-container"><button class="wide-btn" onclick="window.location.href='loan-documents.html'">See All Required Documents</button></div>
+</section>
+
+<div id="footer-placeholder"></div>
+</main>
+</div>
+<script>
+    function updateQuickEMI(p, btn, rate) {
+        document.querySelectorAll('.amt-tab').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        const n = 30 * 12; 
+        const mr = rate / 12 / 100;
+        const emi = p * mr * Math.pow(1 + mr, n) / (Math.pow(1 + mr, n) - 1);
+        let amtText = p >= 10000000 ? (p/10000000) + " Crore" : (p/100000) + " Lac";
+        document.getElementById('qAmt').innerText = "₹" + amtText;
+        document.getElementById('qEMI').innerText = "₹" + Math.round(emi).toLocaleString('en-IN');
+    }
+    document.addEventListener('DOMContentLoaded', () => {
+        updateQuickEMI(10000000, document.querySelector('.amt-tab.active'), 8.50);
+    });
+</script>
+<script src="script.js"></script>
+</body>
+</html>

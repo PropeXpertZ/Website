@@ -1,0 +1,633 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="PropXpertz helps you discover premium apartments, villas, open plots, and commercial spaces across Hyderabad, plus smart home loan tools.">
+  <link rel="canonical" href="https://propxpertz.com/">
+  <meta property="og:title" content="PropXpertz | Real Estate Hyderabad">
+  <meta property="og:description" content="Discover premium properties and use powerful loan tools with PropXpertz.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://propxpertz.com/">
+  <meta property="og:image" content="assets/branding/og-banner.svg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="PropXpertz | Real Estate Hyderabad">
+  <meta name="twitter:description" content="Premium properties and loan tools for Hyderabad buyers.">
+  <meta name="twitter:image" content="assets/branding/og-banner.svg">
+  <title> PropXpertz | Real Estate Hyderabad</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="assets/logos/site-logo.svg" type="image/svg+xml">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "PropXpertz",
+    "url": "https://propxpertz.com",
+    "logo": "assets/logos/site-logo.svg"
+  }
+  </script>
+</head>
+
+<body class="home">
+<!-- ================= HEADER ================= -->
+<div id="page">
+  <div id="header-placeholder"></div> 
+  <noscript>
+    <nav aria-label="Primary">
+      <a href="index.html">Home</a> •
+      <a href="offers.html">Offers</a> •
+      <a href="loan-calculator-tools.html">Loan Tools</a> •
+      <a href="apartments.html">Apartments</a> •
+      <a href="villas.html">Villas</a> •
+      <a href="open-plots.html">Open Plots</a> •
+      <a href="commercial.html">Commercial</a> •
+      <a href="farm-house.html">Farm House</a> •
+      <a href="large-lands.html">Large Lands</a> •
+      <a href="contact.html">Contact</a>
+    </nav>
+  </noscript>
+<!-- ================= MAIN CONTENT ================= -->
+<section class="hero">
+  <div class="hero-content">
+    <h2>A One Stop Destination for<br>All Your Real Estate Needs</h2>
+    <p>Discover premium apartments, luxury villas, and commercial properties across Hyderabad.</p>
+
+    
+
+    
+  </div>
+</section>
+
+<main>
+  <section class="section search-section" id="categories">
+    <div class="track-outer">
+      <div class="section-header">
+      <h3>Explore Properties</h3>
+    </div>
+      <div class="search-panel" aria-label="Quick property search">
+        <div class="search-actions">
+          <button class="search-tile" data-go="apartments.html"><i class="fa-solid fa-building"></i><span>Apartments</span></button>
+          <button class="search-tile" data-go="villas.html"><i class="fa-solid fa-house-chimney"></i><span>Villas</span></button>
+          <button class="search-tile" data-go="open-plots.html"><i class="fa-solid fa-map-location-dot"></i><span>Open Plots</span></button>
+          <button class="search-tile" data-go="commercial.html"><i class="fa-solid fa-store"></i><span>Commercial</span></button>
+          <button class="search-tile" data-go="farm-house.html"><i class="fa-solid fa-tree"></i><span>Farm House</span></button>
+          <button class="search-tile" data-go="large-lands.html"><i class="fa-solid fa-layer-group"></i><span>Large Lands</span></button>
+        </div>
+        <div class="mega-search" role="search">
+          <div class="ms-field ms-location">
+            <input id="searchText" type="text" placeholder="Choose City">
+          </div>
+          <div class="ms-field ms-type">
+            <select id="msType" aria-label="Location">
+              <option value="">Location</option>
+              <option value="tellapur">Tellapur</option>
+              <option value="kokapet">Kokapet</option>
+              <option value="gachibowli">Gachibowli</option>
+              <option value="financial-district">Financial District</option>
+            </select>
+          </div>
+          <div class="ms-field ms-budget">
+            <select id="msBudget" aria-label="Budget">
+              <option value="">Budget</option>
+              <option value="under-50l">Under ₹50L</option>
+              <option value="50-100l">₹50L–₹1Cr</option>
+              <option value="1-2cr">₹1Cr–₹2Cr</option>
+              <option value="2cr-plus">₹2Cr+</option>
+            </select>
+          </div>
+          <button id="searchGo" class="ms-btn">Search</button>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section class="section" id="featured">
+    <div class="section-header">
+      <h3>Featured Properties</h3>
+    </div>
+    <div class="track-outer">
+      <div id="featuredTrack" class="featured-track">
+        <a href="apartments.html" class="card elite-item" data-type="apartments" data-go="apartments.html">
+          <img src="https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?q=80&w=1600&auto=format&fit=crop" alt="Premium Apartment Tower" loading="lazy">
+          <div class="card-body">
+            <h4>Skyline Residences</h4>
+            <p>3 BHK luxury apartments at Financial District</p>
+          </div>
+        </a>
+        <a href="villas.html" class="card elite-item" data-type="villas" data-go="villas.html">
+          <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1600&auto=format&fit=crop" alt="Modern Villa Exterior" loading="lazy">
+          <div class="card-body">
+            <h4>Oakwood Villas</h4>
+            <p>4 BHK gated community villas near Gachibowli</p>
+          </div>
+        </a>
+        <a href="commercial.html" class="card elite-item" data-type="commercial" data-go="commercial.html">
+          <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=1600&auto=format&fit=crop" alt="Grade-A Office Tower" loading="lazy">
+          <div class="card-body">
+            <h4>Summit Business Park</h4>
+            <p>Grade-A office spaces with smart amenities</p>
+        </div>
+        </a>
+        <a href="open-plots.html" class="card elite-item" data-type="open-plots" data-go="open-plots.html">
+          <img src="https://images.unsplash.com/photo-1568605114967-8130f3a36994?q=80&w=1600&auto=format&fit=crop" alt="Open Plot Community" loading="lazy">
+          <div class="card-body">
+            <h4>Hillside Plots</h4>
+            <p>DTCP-approved plots with wide internal roads</p>
+          </div>
+        </a>
+        <a href="apartments.html" class="card elite-item" data-type="apartments" data-go="apartments.html">
+          <img src="https://images.unsplash.com/photo-1505691938895-1758d7feb511?q=80&w=1600&auto=format&fit=crop" alt="Luxury Apartment Lobby" loading="lazy">
+          <div class="card-body">
+            <h4>Azure Heights</h4>
+            <p>Premium 2–3 BHK with clubhouse and pool</p>
+          </div>
+        </a>
+        <a href="villas.html" class="card elite-item" data-type="villas" data-go="villas.html">
+          <img src="https://pbse-aws.fastly.propertybase.com/propertybase-clients/00D5f000000KNMaEAO/a0kTS000005yXkb/bg5scv5dd/01.jpg?width=900&optimize=low&auto=webp" alt="Luxury Villa Front View" loading="lazy">
+          <div class="card-body">
+            <h4>Verde Estates</h4>
+            <p>Designer villas with landscaped gardens</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+  
+  <section class="bank-network-section" id="trusted-partners">
+    <h2>Trusted Partners of Global Developers</h2>
+    <div class="track-outer no-interact">
+      <div id="partnersTrack" class="partners-track" data-speed="24">
+        <div class="logo-card"><img class="logo-img" src="assets/logos/partners-std/Pragna.png" alt="Pragna Group" onerror="this.closest('div.logo-card').innerHTML='<span class=&quot;bank-label&quot;>Pragna Group</span>'"></div>
+        <div class="logo-card logo-terralink"><img class="logo-img" src="assets/logos/partners-std/teralink.png" alt="Terralink" onerror="this.style.display='none'"></div>
+        <div class="logo-card"><img class="logo-img" src="assets/logos/partners-std/candeur.png" alt="Candeur" onerror="this.closest('div.logo-card').innerHTML='<span class=&quot;bank-label&quot;>Candeur</span>'"></div>
+        <div class="logo-card"><img class="logo-img" src="assets/logos/partners-std/Godrej.png" alt="Godrej" onerror="this.closest('div.logo-card').innerHTML='<span class=&quot;bank-label&quot;>Godrej</span>'"></div>
+        <div class="logo-card"><img class="logo-img" src="assets/logos/partners-std/Sobha.png" alt="Sobha"></div>
+        <div class="logo-card"><img class="logo-img" src="assets/logos/partners-std/brigade.png" alt="Brigade"></div>
+        <div class="logo-card"><img class="logo-img" src="assets/logos/partners-std/DAMAC.png" alt="Damac"></div>
+        <div class="logo-card logo-landmark"><img class="logo-img" src="assets/logos/partners-std/landmark.png" alt="Landmark" onerror="this.style.display='none'"></div>
+        <div class="logo-card"><img class="logo-img" src="assets/logos/partners-std/prestige.png" alt="Prestige" onerror="this.closest('div.logo-card').innerHTML='<span class=&quot;bank-label&quot;>Prestige</span>'"></div>
+        <div class="logo-card"><img class="logo-img" src="assets/logos/partners-std/dlf.png" alt="DLF" onerror="this.closest('div.logo-card').innerHTML='<span class=&quot;bank-label&quot;>DLF</span>'"></div>
+        <div class="logo-card"><img class="logo-img" src="assets/logos/partners-std/myhome.png" alt="My Home" onerror="this.closest('div.logo-card').innerHTML='<span class=&quot;bank-label&quot;>My Home</span>'"></div>
+        <div class="logo-card"><img class="logo-img" src="assets/logos/partners-std/lodha.png" alt="Lodha" onerror="this.closest('div.logo-card').innerHTML='<span class=&quot;bank-label&quot;>Lodha</span>'"></div>
+        <div class="logo-card"><img class="logo-img" src="assets/logos/partners-std/shapoorji.png" alt="Shapoorji Pallonji" onerror="this.closest('div.logo-card').innerHTML='<span class=&quot;bank-label&quot;>Shapoorji Pallonji</span>'"></div>
+        <div class="logo-card"><img class="logo-img" src="assets/logos/partners-std/raheja.png" alt="K Raheja" onerror="this.closest('div.logo-card').innerHTML='<span class=&quot;bank-label&quot;>K Raheja</span>'"></div>
+        <div class="logo-card"><img class="logo-img" src="assets/logos/partners-std/aparna.png" alt="Aparna" onerror="this.closest('div.logo-card').innerHTML='<span class=&quot;bank-label&quot;>Aparna</span>'"></div>
+        <div class="logo-card"><img class="logo-img" src="assets/logos/partners-std/phoenix.png" alt="Phoenix" onerror="this.closest('div.logo-card').innerHTML='<span class=&quot;bank-label&quot;>Phoenix</span>'"></div>
+      </div>
+    </div>
+  </section>
+  
+  <section class="section services-section">
+    <div class="section-header">
+      <h3>Services Offered</h3>
+    </div>
+    <div class="track-outer">
+      <div class="featured-track services-list">
+        <a href="financial-consulting.html" class="services-item card elite-item">
+          <div class="icon-wrap"><i class="fa-solid fa-chart-line"></i></div>
+          <h4>Financial Consulting</h4><p>Plan budgets and compare loans</p>
+        </a>
+        <a href="legal-opinion.html" class="services-item card elite-item">
+          <div class="icon-wrap"><i class="fa-solid fa-scale-balanced"></i></div>
+          <h4>Legal Opinion</h4><p>Document and approval checks</p>
+        </a>
+        <a href="interior-designing.html" class="services-item card elite-item">
+          <div class="icon-wrap"><i class="fa-solid fa-couch"></i></div>
+          <h4>Interior Designing</h4><p>Space planning and concepts</p>
+        </a>
+        <a href="home-automation.html" class="services-item card elite-item">
+          <div class="icon-wrap"><i class="fa-solid fa-house-signal"></i></div>
+          <h4>Home Automation</h4><p>Smart home recommendations</p>
+        </a>
+        <a href="nri-services.html" class="services-item card elite-item">
+          <div class="icon-wrap"><i class="fa-solid fa-earth-asia"></i></div>
+          <h4>NRI Services</h4><p>Remote coordination and updates</p>
+        </a>
+        <a href="help-center.html" class="services-item card elite-item">
+          <div class="icon-wrap"><i class="fa-solid fa-circle-question"></i></div>
+          <h4>Help Center</h4><p>Guides and quick assistance</p>
+        </a>
+      </div>
+    </div>
+  </section>
+  
+  <section class="section ribbon-section">
+    <div class="section-header ">
+      <h3>Partner Bank Loans</h3>
+    </div>
+    <div class="ribbon-grid">
+      <a class="ribbon-item" href="sbi-loan.html"><img src="assets/logos/banks-std/SBI.png" alt="SBI" onerror="this.style.display='none'"></a>
+      <a class="ribbon-item" href="hdfc-loan.html"><img src="assets/logos/banks-std/HDFC.png" alt="HDFC" onerror="this.style.display='none'"></a>
+      <a class="ribbon-item" href="icici-loan.html"><img src="assets/logos/banks-std/ICICI.png" alt="ICICI" onerror="this.style.display='none'"></a>
+      <a class="ribbon-item" href="axis-loan.html"><img src="assets/logos/banks-std/Axis.png" alt="Axis" onerror="this.style.display='none'"></a>
+      <a class="ribbon-item" href="bob-loan.html"><img src="assets/logos/banks-std/BOB.png" alt="Bank of Baroda" onerror="this.src='assets/logos/bob.svg'; this.onerror=null;"></a>
+      <a class="ribbon-item" href="kotak-loan.html"><img src="assets/logos/banks-std/kotak.png" alt="Kotak" onerror="this.style.display='none'"></a>
+      <a class="ribbon-item" href="idfc-loan.html"><img src="assets/logos/banks-std/IDFC.png" alt="IDFC" onerror="this.style.display='none'"></a>
+      <a class="ribbon-item" href="canara-loan.html"><img src="assets/logos/banks-std/Canara.png" alt="Canara" onerror="this.style.display='none'"></a>
+      <a class="ribbon-item" href="yes-loan.html"><img src="assets/logos/banks-std/Yes.png" alt="YES BANK" onerror="this.style.display='none'"></a>
+    </div>
+  </section>
+
+  <section class="section finance-section">
+    <div class="section-header light">
+        <h3>Smart Financing Suite</h3>
+    </div>
+
+    <div class="track-outer pad-bottom">
+      <div id="loanTrack" class="loan-track">
+        <a href="loan-calculator-tools.html?calc=emi" class="card elite-item loan-style">
+          <div class="icon-wrap"><i class="fa-solid fa-calculator"></i></div>
+          <h4>EMI Planner</h4><p>Precision monthly math</p>
+        </a>
+        <a href="loan-calculator-tools.html?calc=eligibility" class="card elite-item loan-style">
+          <div class="icon-wrap"><i class="fa-solid fa-house-circle-check"></i></div>
+          <h4>Eligibility</h4><p>Check loan capacity</p>
+        </a>
+        <a href="loan-calculator-tools.html?calc=switch" class="card elite-item loan-style">
+          <div class="icon-wrap"><i class="fa-solid fa-shuffle"></i></div>
+          <h4>Loan Switch</h4><p>Compare bank savings</p>
+        </a>
+        <a href="loan-calculator-tools.html?calc=prepayment" class="card elite-item loan-style">
+          <div class="icon-wrap"><i class="fa-solid fa-piggy-bank"></i></div>
+          <h4>Prepayment</h4><p>Save on interest</p>
+        </a>
+        <a href="loan-calculator-tools.html?calc=rate" class="card elite-item loan-style">
+          <div class="icon-wrap"><i class="fa-solid fa-chart-line"></i></div>
+          <h4>Rate Impact</h4><p>Rate fluctuation math</p>
+        </a>
+        <a href="loan-calculator-tools.html?calc=repayment" class="card elite-item loan-style">
+          <div class="icon-wrap"><i class="fa-solid fa-table-list"></i></div>
+          <h4>Repayment Schedule</h4><p>Full payment timeline</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+<section class="testimonials-marquee">
+  <div class="section-header">
+    <h3>What Our Customers Say</h3>
+  </div>
+
+  <div class="marquee-wrapper">
+    <div class="marquee-track">
+      
+      <div class="review-card">
+        <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+        <p>“Exceptional service from start to finish. Propxpertz managed my home loan processing, legal verification, and even home automation setup. Their professional approach and clarity at every stage impressed me.”</p>
+        <div class="reviewer-info">
+          <div class="avatar">K</div>
+          <div class="details">
+            <span class="name">Karthikeya Sharma</span>
+            <span class="loc">Vijayawada</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="review-card">
+        <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+        <p>“I am extremely satisfied with Propxpertz. Their financial consulting team explained every detail clearly, ensuring I made an informed investment decision. The entire experience was seamless and reassuring.”</p>
+        <div class="reviewer-info">
+          <div class="avatar">S</div>
+          <div class="details">
+            <span class="name">Sowmya Srinivasan</span>
+            <span class="loc">Chennai</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="review-card">
+        <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+        <p>“From property checklist verification to interior planning, Propxpertz delivered outstanding service. Their team is knowledgeable, responsive, and genuinely committed to client satisfaction. I would confidently recommend them.”</p>
+        <div class="reviewer-info">
+          <div class="avatar">N</div>
+          <div class="details">
+            <span class="name">Nithin Gopalakrishnan</span>
+            <span class="loc">Bengaluru</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="review-card">
+        <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i></div>
+        <p>“The property checklist service from Propxpertz was extremely detailed. They verified approvals, documents, and compliance before I finalized the deal. Their attention to detail saved me from potential issues.”</p>
+        <div class="reviewer-info">
+          <div class="avatar">H</div>
+          <div class="details">
+            <span class="name">Harish Chandran</span>
+            <span class="loc">Trivandrum</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="review-card">
+        <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i></div>
+        <p>“I highly appreciate their end-to-end support – from legal opinion to interior design planning. The team coordinated everything efficiently, which made my house purchase process comfortable and organized.”</p>
+        <div class="reviewer-info">
+          <div class="avatar">D</div>
+          <div class="details">
+            <span class="name">Divya Krishnan</span>
+            <span class="loc">Madurai</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="review-card">
+        <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i></div>
+        <p>“As an NRI investor, I relied on Propxpertz for complete property consultation. Their updates were consistent and transparent. I felt secure even while managing things remotely.”</p>
+        <div class="reviewer-info">
+          <div class="avatar">A</div>
+          <div class="details">
+            <span class="name">Arjun B.</span>
+            <span class="loc">Mysuru</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="review-card">
+        <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i></div>
+        <p>“Propxpertz helped me with NRI property management while I was abroad. Their structured approach and transparency gave me confidence. They handled documentation and coordination professionally.”</p>
+        <div class="reviewer-info">
+          <div class="avatar">M</div>
+          <div class="details">
+            <span class="name">Meenakshi Iyer</span>
+            <span class="loc">Kochi</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="review-card">
+        <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i></div>
+        <p>“I opted for their bank loan assistance and financial consulting services. They compared multiple options and guided me in selecting the most suitable loan. The process was smooth and stress-free.”</p>
+        <div class="reviewer-info">
+          <div class="avatar">V</div>
+          <div class="details">
+            <span class="name">Venkatesh Raman</span>
+            <span class="loc">Tirupati</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="review-card">
+        <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i><i class="fa-regular fa-star"></i></div>
+        <p>“I used their interior designing and home automation consultation services. The ideas suggested were practical and modern. The execution planning was good, though I felt timelines could be tighter.”</p>
+        <div class="reviewer-info">
+          <div class="avatar">A</div>
+          <div class="details">
+            <span class="name">Ananya S.</span>
+            <span class="loc">Bengaluru</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="review-card">
+        <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i><i class="fa-regular fa-star"></i></div>
+        <p>“The team supported me with legal opinion and property checklist verification. They highlighted risks I wouldn’t have noticed myself. Some stages required reminders, but their expertise is evident.”</p>
+        <div class="reviewer-info">
+          <div class="avatar">P</div>
+          <div class="details">
+            <span class="name">Pradeep Raghavan</span>
+            <span class="loc">Hyderabad</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="review-card">
+        <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i></div>
+        <p>“I approached Propxpertz for property consultation and basic documentation support. The team explained the checklist clearly. The process took slightly longer than expected, but overall satisfactory.”</p>
+        <div class="reviewer-info">
+          <div class="avatar">R</div>
+          <div class="details">
+            <span class="name">R. Suresh Kumar</span>
+            <span class="loc">Chennai</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="review-card">
+        <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i></div>
+        <p>“Propxpertz assisted me with bank loan coordination and property verification. Their communication was decent. A little faster follow-up would make the experience even better.”</p>
+        <div class="reviewer-info">
+          <div class="avatar">D</div>
+          <div class="details">
+            <span class="name">Dev Anand</span>
+            <span class="loc">Coimbatore</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="review-card">
+        <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i></div>
+        <p>“The team explained the property details clearly and guided me well through the booking process. There were a few delays in documentation, but overall the experience was satisfactory and trustworthy.”</p>
+        <div class="reviewer-info">
+          <div class="avatar">R</div>
+          <div class="details">
+            <span class="name">Ramesh Iyer</span>
+            <span class="loc">Hyderabad</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="review-card">
+        <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+        <p>“From site visit to final agreement, the entire process was well managed. The staff was responsive and answered all my questions patiently. Very happy with the service and follow-up.”</p>
+        <div class="reviewer-info">
+          <div class="avatar">S</div>
+          <div class="details">
+            <span class="name">Srinivasa Rao K</span>
+            <span class="loc">Hyderabad</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="review-card">
+        <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+        <p>“I had a wonderful experience with the team. They helped me choose the right property based on my budget and future plans. Everything was handled professionally and transparently.”</p>
+        <div class="reviewer-info">
+          <div class="avatar">L</div>
+          <div class="details">
+            <span class="name">Lakshmi N.</span>
+            <span class="loc">Hyderabad</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="review-card">
+        <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+        <p>“Exceptional service from start to finish. Propxpertz managed my home loan processing, legal verification, and even home automation setup. Their professional approach and clarity at every stage impressed me.”</p>
+        <div class="reviewer-info">
+          <div class="avatar">K</div>
+          <div class="details">
+            <span class="name">Karthikeya Sharma</span>
+            <span class="loc">Vijayawada</span>
+          </div>
+        </div>
+      </div>
+      <div class="review-card">
+        <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+        <p>“I am extremely satisfied with Propxpertz. Their financial consulting team explained every detail clearly, ensuring I made an informed investment decision. The entire experience was seamless and reassuring.”</p>
+        <div class="reviewer-info">
+          <div class="avatar">S</div>
+          <div class="details">
+            <span class="name">Sowmya Srinivasan</span>
+            <span class="loc">Chennai</span>
+          </div>
+        </div>
+      </div>
+      <div class="review-card">
+        <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+        <p>“From property checklist verification to interior planning, Propxpertz delivered outstanding service. Their team is knowledgeable, responsive, and genuinely committed to client satisfaction. I would confidently recommend them.”</p>
+        <div class="reviewer-info">
+          <div class="avatar">N</div>
+          <div class="details">
+            <span class="name">Nithin Gopalakrishnan</span>
+            <span class="loc">Bengaluru</span>
+          </div>
+        </div>
+      </div>
+      <div class="review-card">
+        <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i></div>
+        <p>“The property checklist service from Propxpertz was extremely detailed. They verified approvals, documents, and compliance before I finalized the deal. Their attention to detail saved me from potential issues.”</p>
+        <div class="reviewer-info">
+          <div class="avatar">H</div>
+          <div class="details">
+            <span class="name">Harish Chandran</span>
+            <span class="loc">Trivandrum</span>
+          </div>
+        </div>
+      </div>
+      <div class="review-card">
+        <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i></div>
+        <p>“I highly appreciate their end-to-end support – from legal opinion to interior design planning. The team coordinated everything efficiently, which made my house purchase process comfortable and organized.”</p>
+        <div class="reviewer-info">
+          <div class="avatar">D</div>
+          <div class="details">
+            <span class="name">Divya Krishnan</span>
+            <span class="loc">Madurai</span>
+          </div>
+        </div>
+      </div>
+      <div class="review-card">
+        <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i></div>
+        <p>“As an NRI investor, I relied on Propxpertz for complete property consultation. Their updates were consistent and transparent. I felt secure even while managing things remotely.”</p>
+        <div class="reviewer-info">
+          <div class="avatar">A</div>
+          <div class="details">
+            <span class="name">Arjun B.</span>
+            <span class="loc">Mysuru</span>
+          </div>
+        </div>
+      </div>
+      <div class="review-card">
+        <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i></div>
+        <p>“Propxpertz helped me with NRI property management while I was abroad. Their structured approach and transparency gave me confidence. They handled documentation and coordination professionally.”</p>
+        <div class="reviewer-info">
+          <div class="avatar">M</div>
+          <div class="details">
+            <span class="name">Meenakshi Iyer</span>
+            <span class="loc">Kochi</span>
+          </div>
+        </div>
+      </div>
+      <div class="review-card">
+        <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i></div>
+        <p>“I opted for their bank loan assistance and financial consulting services. They compared multiple options and guided me in selecting the most suitable loan. The process was smooth and stress-free.”</p>
+        <div class="reviewer-info">
+          <div class="avatar">V</div>
+          <div class="details">
+            <span class="name">Venkatesh Raman</span>
+            <span class="loc">Tirupati</span>
+          </div>
+        </div>
+      </div>
+      <div class="review-card">
+        <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i><i class="fa-regular fa-star"></i></div>
+        <p>“I used their interior designing and home automation consultation services. The ideas suggested were practical and modern. The execution planning was good, though I felt timelines could be tighter.”</p>
+        <div class="reviewer-info">
+          <div class="avatar">A</div>
+          <div class="details">
+            <span class="name">Ananya S.</span>
+            <span class="loc">Bengaluru</span>
+          </div>
+        </div>
+      </div>
+      <div class="review-card">
+        <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i><i class="fa-regular fa-star"></i></div>
+        <p>“The team supported me with legal opinion and property checklist verification. They highlighted risks I wouldn’t have noticed myself. Some stages required reminders, but their expertise is evident.”</p>
+        <div class="reviewer-info">
+          <div class="avatar">P</div>
+          <div class="details">
+            <span class="name">Pradeep Raghavan</span>
+            <span class="loc">Hyderabad</span>
+          </div>
+        </div>
+      </div>
+      <div class="review-card">
+        <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i></div>
+        <p>“I approached Propxpertz for property consultation and basic documentation support. The team explained the checklist clearly. The process took slightly longer than expected, but overall satisfactory.”</p>
+        <div class="reviewer-info">
+          <div class="avatar">R</div>
+          <div class="details">
+            <span class="name">R. Suresh Kumar</span>
+            <span class="loc">Chennai</span>
+          </div>
+        </div>
+      </div>
+      <div class="review-card">
+        <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i></div>
+        <p>“Propxpertz assisted me with bank loan coordination and property verification. Their communication was decent. A little faster follow-up would make the experience even better.”</p>
+        <div class="reviewer-info">
+          <div class="avatar">D</div>
+          <div class="details">
+            <span class="name">Dev Anand</span>
+            <span class="loc">Coimbatore</span>
+          </div>
+        </div>
+      </div>
+      <div class="review-card">
+        <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i></div>
+        <p>“The team explained the property details clearly and guided me well through the booking process. There were a few delays in documentation, but overall the experience was satisfactory and trustworthy.”</p>
+        <div class="reviewer-info">
+          <div class="avatar">R</div>
+          <div class="details">
+            <span class="name">Ramesh Iyer</span>
+            <span class="loc">Hyderabad</span>
+          </div>
+        </div>
+      </div>
+      <div class="review-card">
+        <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+        <p>“From site visit to final agreement, the entire process was well managed. The staff was responsive and answered all my questions patiently. Very happy with the service and follow-up.”</p>
+        <div class="reviewer-info">
+          <div class="avatar">S</div>
+          <div class="details">
+            <span class="name">Srinivasa Rao K</span>
+            <span class="loc">Hyderabad</span>
+          </div>
+        </div>
+      </div>
+      <div class="review-card">
+        <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+        <p>“I had a wonderful experience with the team. They helped me choose the right property based on my budget and future plans. Everything was handled professionally and transparently.”</p>
+        <div class="reviewer-info">
+          <div class="avatar">L</div>
+          <div class="details">
+            <span class="name">Lakshmi N.</span>
+            <span class="loc">Hyderabad</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+</main>
+<div id="footer-placeholder"></div>
+</div> 
+  <script src="script.js"></script>
+</body>
+</html>
